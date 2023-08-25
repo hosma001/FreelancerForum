@@ -36,7 +36,7 @@ const freelancers = [
     const info = {
         name: names[nameIdx],
         occupation: occupations[occupationIdx],
-        price: freelancers[priceIdx]     
+        price: freelancers[priceIdx].price     
     };
     return info;   
 }
@@ -49,7 +49,10 @@ const information = [
   function render (){
     const titleHeadings = `<h1 class = "title Heading">Freelancer Forum</h1>`;
     
-    const priceHeadings = `<h2 class = "price Heading">The average starting price is [placeholder].</h2>`;
+    //const totalPrice = freelancers.reduce((total, freelancer) => total + freelancer.price, 0);
+    //const averagePrice = info.price / ;
+    
+    const priceHeadings = `<h2 class = "price Heading">The average starting price is $[placeholder].</h2>`;
     
     const middleHeadings = `<h2 class = "middle Heading">Available Freelancers</h2>`;
 
